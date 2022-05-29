@@ -1,8 +1,4 @@
 # Vehicle Detection
-[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
-
-The Project
----
 
 The goals / steps of this project are the following:
 
@@ -86,18 +82,5 @@ Below is the visualization of the heatmap next to the resulting bounding boxes.
 
 ![alt_text][image6]
 
-## Final Pipeline
-All that's left to do now is to process the entire video. Here is it on Youtube.
-[![Vehicle Detection][image7]](https://www.youtube.com/watch?v=zNlnjWxU6DM&feature=youtu.be "Vehicle Detection Video")
-
 ## Conclusion
-This algorithm is not a fast one - it appears to take 15 minutes on my (slow) laptop. Finding a sweet spot between accuracy and computational speed was a challenge. I suppose given that the video already takes 15 minutes, hope for this implementation to achieve real-time speeds would be a long shot.
-
-
-### Improvements
-- I made no changes to the nature of the dataset, as there were already over 8000 examples per class. In order to improve robustness and account for varying conditions, further data augmentation (ala traffic signs classifier) would help.
-- Perhaps predicting the direction of the moving car and limiting our search to a neighbourhood around that area would improve smoothing even further. 
-- I'd like to attempt a deep learning approach to this project. Perhaps an implementation of the
-[tinyYOLO network by pjreddie](https://pjreddie.com/darknet/yolo/), which is fast and (relatively) accurate.
- 
-
+This algorithm is not a fast one - it appears to take 15 minutes on my laptop. Finding a sweet spot between accuracy and computational speed was a challenge. I suppose given that the video already takes 15 minutes, hope for this implementation to achieve real-time speeds would be a long shot.
